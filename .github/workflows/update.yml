@@ -35,7 +35,7 @@ jobs:
       - name: generate .api/guides.json
         run: npm run api:generate
       - run: git status
-      - name: move .api/guides.json to iptv-org/api
+      - name: move .api/guides.json to zhbjzhql1/api
         uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
