@@ -53,13 +53,3 @@ jobs:
           git-config-email: zhbjzhql@qq.com
           commit-message: '[Bot] Deploy to zhbjzhql1/api'
           clean: false
-      - name: commit
-        run: |
-          git config --global user.email zhbjzhql@qq.com
-          git config --global user.name zhbjzhql1
-          git add .
-          git commit -m "update" -a
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}        
