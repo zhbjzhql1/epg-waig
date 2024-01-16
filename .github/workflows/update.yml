@@ -46,7 +46,7 @@ jobs:
           repository-name: zhbjzhql1/api
           branch: gh-pages
           folder: .api
-          token: ${{ steps.create-app-token.outputs.token }}
+#          token: ${{ steps.create-app-token.outputs.token }}
           git-config-name: zhbjzhql1
           git-config-email: zhbjzhql@qq.com
           commit-message: '[Bot] Deploy to zhbjzhql1/api'
