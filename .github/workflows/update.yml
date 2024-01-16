@@ -51,3 +51,5 @@ jobs:
           git-config-email: zhbjzhql@qq.com
           commit-message: '[Bot] Deploy to zhbjzhql1/api'
           clean: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
