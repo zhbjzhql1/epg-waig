@@ -42,6 +42,8 @@ jobs:
       - name: move .api/guides.json to zhbjzhql1/api
         uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           repository-name: zhbjzhql1/api
           branch: gh-pages
@@ -51,5 +53,4 @@ jobs:
           git-config-email: zhbjzhql@qq.com
           commit-message: '[Bot] Deploy to zhbjzhql1/api'
           clean: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
